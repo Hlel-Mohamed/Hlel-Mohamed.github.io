@@ -134,7 +134,7 @@ h1{
   transform: translate(20px);
 }
 
-@media(max-width:768px){
+@media(max-width:1000px){
   #sidebar{
     left: -270px;
   }
