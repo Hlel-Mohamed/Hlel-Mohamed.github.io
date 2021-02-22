@@ -10,7 +10,7 @@ for(i in mat){
         url: dir,
         success: function (data) {
             $(data).find("a:contains(" + fileextension + ")").each(function () {
-                let filename = this.href.replace(window.location.host, "").replace("https://hlel-mohamed.github.io/", "");
+                let filename = this.href.replace(window.location.host, "").replace("https:///", "");
                 $(`#${s}-${k}`).append('<li><a href="' +filename + '" target="_blank">'+ filename.replaceAll("%20"," ").replace(dir,"").replace(".pdf","").replaceAll("_"," ").replaceAll("%C3%A9","é").replaceAll("%C3%A0","à") +"</a></li>");
                 console.log(filename)
             });
