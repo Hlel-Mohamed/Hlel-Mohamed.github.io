@@ -18,3 +18,25 @@ for(i in mat){
     });
     }
 }
+
+/*$(document).on("click","input[name='mats']",function(){
+    thisRadio = $(this);
+    if(thisRadio.hasClass("imChecked")){
+        thisRadio.removeClass("imChecked");
+        thisRadio.prop('checked',false);
+    }else{
+        thisRadio.prop('checked',true);
+        thisRadio.addClass("imChecked");
+    }
+})
+
+$(document).on("click","input[name='s-mats']",function(){
+    thisRadio = $(this);
+    if(thisRadio.hasClass("imChecked")){
+        thisRadio.removeClass("imChecked");
+        thisRadio.prop('checked',false);
+    }else{
+        thisRadio.prop('checked',true);
+        thisRadio.addClass("imChecked");
+    }
+})*/

@@ -20,7 +20,6 @@ body {
 
 .container{
   position:fixed;
-  overflow: auto;
   background-image: url(images/content_bg.jpg);
   height: 80%;
   padding: 20px; 
@@ -134,27 +133,6 @@ h1{
   transform: translate(20px);
 }
 
-@media(max-width:1000px){
-  #sidebar{
-    left: -270px;
-  }
-  #btn:checked ~ #sidebar {
-    left: 0px;
-  }
-
-  .container{
-    left: 0px;
-  }
-
-  .wrapper .menu-btn {
-    left: 20px;
-  }
-
-  #btn:checked ~ .menu-btn {
-    left: 200px;
-  }
-}
-
 #sidebar .list-items li:last-child{
   border-top: 1px solid #333;
   position:fixed;
@@ -222,45 +200,51 @@ h1{
   display: flex;
 }
 
+.mat-all ul{
+  list-style:none;
+}
+
 .mat-all a{
   text-decoration: none;
-  color: black;
+  color:slateblue;
 }
 
-.mat-flex{
-  flex: 3;
-  border: black solid 1px;
-  height: 500px;
-  width: 100px;
-}
 
-.mat-flex-block1{
-  position: absolute;
-  top: 200px;
-}
-
-.mat-flex-block2{
-  position: absolute;
-  top: 400px;
-}
-
-.mat-flex-block3{
-  position: absolute;
-  top: 600px;
-  margin-bottom: 200px;
-}
-
-.mat-all ul{
+.mat-all ul ul{
   position: relative;
   display: none;
   list-style: none;
   left: 20px;
 }
 
-.mat-flex label:hover{
-  text-decoration: underline;
-}
 
 input:checked ~ ul{
   display: block;
+}
+
+
+
+@media(max-width:1000px){
+  #sidebar{
+    left: -270px;
+  }
+  #btn:checked ~ #sidebar {
+    left: 0px;
+  }
+
+  .container{
+    left: 0px;
+  }
+
+  .wrapper .menu-btn {
+    left: 20px;
+  }
+
+  #btn:checked ~ .menu-btn {
+    left: 200px;
+  }
+
+  .emp-container{
+    display: block;
+  }
 }
