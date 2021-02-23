@@ -11,8 +11,9 @@ for(i in mat){
         success: function (data) {
             $(data).find("a:contains(" + fileextension + ")").each(function () {
                 let filename = this.href.replace(window.location.host, "").replace("https:///", "");
-                $(`#${s}-${k}`).append('<li><a href="' +filename + '" target="_blank">'+ filename.replaceAll("%20"," ").replace(dir,"").replace(".pdf","").replaceAll("_"," ").replaceAll("%C3%A9","é").replaceAll("%C3%A0","à") +"</a></li>");
                 console.log(filename)
+                $(`#${s}-${k}`).append('<li><a href="' +filename + '" target="_blank">'+ filename.replaceAll("%20"," ").replace(dir,"").replace(".pdf","").replaceAll("_"," ").replaceAll("%C3%A9","é").replaceAll("%C3%A0","à") +"</a></li>");
+                
             });
         }
     });
@@ -29,7 +30,9 @@ for(i in mat){
         thisRadio.addClass("imChecked");
     }
 })
+
 https://hlel-mohamed.github.io/files/emplois/2-SI-A-1.pdf
+http://127.0.0.1:5500/files/emplois/2-SI-A-1.pdf
 
 $(document).on("click","input[name='s-mats']",function(){
     thisRadio = $(this);
