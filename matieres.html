@@ -8,12 +8,12 @@
 </head>
 
 <body>
-
   <div class="wrapper">
     <input type="checkbox" id="btn" hidden>
     <label for="btn" class="menu-btn">
       <img src="images\download.png" width="30px">
     </label>
+    <label for="btn" class="mob-cl"></label>
     <nav id="sidebar">
       <div class="title">L2-SI</div>
       <ul class="list-items">
@@ -26,313 +26,84 @@
     <div class="container">
       <h1>Matières</h1>
       <div class="mat-all">
-        <div style="flex: 4;">
+        <div>
           <ul>
             <li>
-              <input type="radio" hidden  name="mats" id="mbtn1" name="mats">
-              <label for="mbtn1" class="mat-btn">Administration des base de données</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn1c">
-                  <label for="s-mbtn1c" class="mat-btn">Cours</label>
-                  <ul id="ad-bd-cours"></ul>
-                </li>
-                <li><li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn1tp">
-                  <label for="s-mbtn1tp" class="mat-btn">TP</label>
-                  <ul id="ad-bd-tp"></ul>
-                </li>
-              </ul>
+              <input type="radio" hidden  name="mats" id="mbtn1">
+              <label for="mbtn1" class="mat-btn" style="border: blue solid; flex: 5;">Administration des base de données</label>
+              <div class="mat-container"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora exercitationem tempore sit soluta aliquam repellendus obcaecati neque optio voluptatem. Enim magni autem qui sequi nesciunt earum, vel atque iusto nobis!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aliquam excepturi, quod labore quibusdam consectetur voluptate, aspernatur, voluptatem reprehenderit laudantium tempore distinctio? Odio voluptatem soluta voluptates porro excepturi quasi quisquam?</p>
+              </div>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn2">
               <label for="mbtn2" class="mat-btn">Administration des systemes et des réseaux</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn2c">
-                  <label for="s-mbtn2c" class="mat-btn">Cours</label>
-                  <ul id="ad-s-r-cours"></ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn2tp">
-                  <label for="s-mbtn2tp" class="mat-btn">TP</label>
-                  <ul id="ad-s-r-tp"></ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn3">
               <label for="mbtn3" class="mat-btn">Anglais</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn3td">
-                  <label for="s-mbtn3td" class="mat-btn">TD</label>
-                  <ul id="an-td"></ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
-            <li>
-              <input type="radio" hidden  name="mats" id="mbtn10">
-              <label for="mbtn10" class="mat-btn">Techniques d'indexation</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn10c">
-                  <label for="s-mbtn10c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn10td">
-                  <label for="s-mbtn10td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn10tp">
-                  <label for="s-mbtn10tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <br>
-            <!------------------------->
-          
             <li>
               <input type="radio" hidden  name="mats" id="mbtn4">
               <label for="mbtn4" class="mat-btn">Droit d'informatique, protection des données et éthique</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn4c">
-                  <label for="s-mbtn4c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn4td">
-                  <label for="s-mbtn4td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn4tp">
-                  <label for="s-mbtn4tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn5">
               <label for="mbtn5" class="mat-btn">Entrepôts de données</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn5c">
-                  <label for="s-mbtn5c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn5td">
-                  <label for="s-mbtn5td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn5tp">
-                  <label for="s-mbtn5tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn6">
               <label for="mbtn6" class="mat-btn">Fondements d'inteligence artificiel</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn6c">
-                  <label for="s-mbtn6c" class="mat-btn">Cours</label>
-                  <ul id="fond-ia-cours"></ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn6tp">
-                  <label for="s-mbtn6tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
-            <li>
-              <input type="radio" hidden  name="mats" id="mbtn11">
-              <label for="mbtn11" class="mat-btn">Technologies et programmation web</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn11c">
-                  <label for="s-mbtn11c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn11td">
-                  <label for="s-mbtn11td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn11tp">
-                  <label for="s-mbtn11tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <br>
-            <!------------------------->
-          
             <li>
               <input type="radio" hidden  name="mats" id="mbtn7">
               <label for="mbtn7" class="mat-btn">Programmation systeme et réseaux</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn7c">
-                  <label for="s-mbtn7c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn7td">
-                  <label for="s-mbtn7td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn7tp">
-                  <label for="s-mbtn7tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn8">
               <label for="mbtn8" class="mat-btn">Projet federé</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn8c">
-                  <label for="s-mbtn8c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn8td">
-                  <label for="s-mbtn8td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn8tp">
-                  <label for="s-mbtn8tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn9">
               <label for="mbtn9" class="mat-btn">Techniques de compilation</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn9c">
-                  <label for="s-mbtn9c" class="mat-btn">Cours</label>
-                  <ul id="tech-comp-cours"></ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn9td">
-                  <label for="s-mbtn9td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn9tp">
-                  <label for="s-mbtn9tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
+            </li>
+            <br>
+            <!------------------------->
+            <li>
+              <input type="radio" hidden  name="mats" id="mbtn10">
+              <label for="mbtn10" class="mat-btn">Techniques d'indexation</label>
+            </li>
+            <br>
+            <!------------------------->
+            <li>
+              <input type="radio" hidden  name="mats" id="mbtn11">
+              <label for="mbtn11" class="mat-btn">Technologies et programmation web</label>
             </li>
             <br>
             <!------------------------->
             <li>
               <input type="radio" hidden  name="mats" id="mbtn12">
               <label for="mbtn12" class="mat-btn">Tests de logiciels</label>
-              <ul>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn12c">
-                  <label for="s-mbtn12c" class="mat-btn">Cours</label>
-                  <ul>
-                    <li>Cours N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn12td">
-                  <label for="s-mbtn12td" class="mat-btn">TD</label>
-                  <ul>
-                    <li>TD N1</li>
-                  </ul>
-                </li>
-                <li>
-                  <input type="radio" hidden  name="s-mats" id="s-mbtn12tp">
-                  <label for="s-mbtn12tp" class="mat-btn">TP</label>
-                  <ul>
-                    <li>TP N1</li>
-                  </ul>
-                </li>
-              </ul>
             </li>
             <br>
             <!------------------------->
           </ul>
-        </div>
-        <div style="flex: 8;">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus repellendus inventore sit beatae, soluta magnam delectus totam assumenda exercitationem alias quas incidunt saepe officia! Itaque distinctio omnis doloribus. Modi, consequatur.</p>
         </div>
       </div>
     </div>

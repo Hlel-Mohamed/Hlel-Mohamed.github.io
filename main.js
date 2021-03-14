@@ -1,3 +1,14 @@
+
+/*$(document).on("click","input[name='mats']",function(){
+    thisRadio = $(this);
+    if(thisRadio.hasClass("imChecked")){
+        thisRadio.removeClass("imChecked");
+        $().append(``)
+    }else{
+        thisRadio.prop('checked',true);
+        thisRadio.addClass("imChecked");
+    }
+})
 let mat=['ad-bd' , 'ad-s-r','an','droit','entr-d','fond-ia','prog-s-r','proj-fed','tech-comp','tech-index','tech-prog-web','test-log']
 let cpd=['cours', 'td','tp']
 for(i in mat){
@@ -20,16 +31,7 @@ for(i in mat){
     }
 }
 
-/*$(document).on("click","input[name='mats']",function(){
-    thisRadio = $(this);
-    if(thisRadio.hasClass("imChecked")){
-        thisRadio.removeClass("imChecked");
-        thisRadio.prop('checked',false);
-    }else{
-        thisRadio.prop('checked',true);
-        thisRadio.addClass("imChecked");
-    }
-})
+
 
 https://hlel-mohamed.github.io/files/emplois/2-SI-A-1.pdf
 http://127.0.0.1:5500/files/emplois/2-SI-A-1.pdf
