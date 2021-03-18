@@ -14,7 +14,7 @@
     />
 
     <title>Hlel Mohamed Aziz</title>
-<!--
+    <!--
 Reflux Template
 https://templatemo.com/tm-531-reflux
 -->
@@ -26,15 +26,19 @@ https://templatemo.com/tm-531-reflux
     <link rel="stylesheet" href="assets/css/templatemo-style.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
-    <link rel="shortcut icon" href="assets\images\favico.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets\images\favico.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
     <div id="page-wraper">
       <!-- Sidebar Menu -->
-      <div class="responsive-nav" >
+      <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu" >
+        <div id="menu" class="menu">
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
@@ -42,7 +46,7 @@ https://templatemo.com/tm-531-reflux
             </div>
             <div class="author-content">
               <h4>Hlel Mohamed Aziz</h4>
-              <span>Web Developer</span>
+              <span>Computer Science Student</span>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
@@ -55,16 +59,22 @@ https://templatemo.com/tm-531-reflux
             <div class="social-network">
               <ul class="soial-icons">
                 <li>
-                  <a href="https://fb.com/Med.Hl3l" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="https://fb.com/Med.Hl3l" target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
                 </li>
                 <li>
                   <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/hlel" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://linkedin.com/in/hlel" target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="https://github.com/Hlel-Mohamed" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://github.com/Hlel-Mohamed" target="_blank"
+                    ><i class="fa fa-github"></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -82,7 +92,8 @@ https://templatemo.com/tm-531-reflux
             <div class="line-dec"></div>
             <span
               >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
+              this layout for your site. Updated on 21 May 2019 for repeated
+              main menu HTML code.</span
             >
           </div>
           <div class="left-image-post">
@@ -340,7 +351,7 @@ https://templatemo.com/tm-531-reflux
                   </figure>
                 </div>
 
-                <div class="isotope-item" data-type="animals">
+                <div class="isotope-item" data-type="people">
                   <figure class="snip1321">
                     <img
                       src="assets/images/portfolio-06.jpg"
@@ -467,7 +478,7 @@ https://templatemo.com/tm-531-reflux
         if (isAnimate) {
           $("body, html").animate(
             {
-              scrollTop: reqSectionPos
+              scrollTop: reqSectionPos,
             },
             800
           );
@@ -477,7 +488,7 @@ https://templatemo.com/tm-531-reflux
       };
 
       var checkSection = function checkSection() {
-        $(".section").each(function() {
+        $(".section").each(function () {
           var $this = $(this),
             topEdge = $this.offset().top - 80,
             bottomEdge = topEdge + $this.height(),
@@ -494,12 +505,12 @@ https://templatemo.com/tm-531-reflux
         });
       };
 
-      $(".main-menu").on("click", "a", function(e) {
+      $(".main-menu").on("click", "a", function (e) {
         e.preventDefault();
         showSection($(this).attr("href"), true);
       });
 
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         checkSection();
       });
     </script>
