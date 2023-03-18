@@ -18,6 +18,7 @@ function sendMail(){
     mail($to, $subject, $message, $headers);
 
     // Redirect the user to a confirmation page
-    
+    header('Location: confirmation.html');
+    exit();
     }
     ?>
