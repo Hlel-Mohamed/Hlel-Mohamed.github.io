@@ -252,7 +252,7 @@ https://templatemo.com/tm-531-reflux
         <div class="row">
           <div class="right-content">
             <div class="container">
-              <form id="contact" action="https://formspree.io/f/mgepggkj" method="post">
+              <form id="contact" action="sendMail.php" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
@@ -354,6 +354,12 @@ https://templatemo.com/tm-531-reflux
     });
   </script>
   <script src="main.js"></script>
+
+  <?php
+
+  include 'sendMail.php';
+  sendMail();
+  ?>
 </body>
 
 </html>
