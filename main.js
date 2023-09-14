@@ -64,6 +64,7 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       alert("E-mail send!!");
+      console.log(response);
       form.reset();
     })
     .catch((error) => {

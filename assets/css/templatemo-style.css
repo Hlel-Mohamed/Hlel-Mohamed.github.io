@@ -149,7 +149,7 @@ html {
 }
 
 .menu .social-network {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .menu .social-network ul li {
@@ -315,6 +315,7 @@ html {
 .white-button{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .white-button a {
@@ -616,6 +617,33 @@ figure.snip1321.hover:after {
   opacity: 0.9;
 }
 
+/* My Skills */
+
+.my-skills .skills{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.my-skills .skills .skill{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-skills .skills .skill img{
+    width: 50%;
+    border-radius: 30%;
+    transition: 0.4s;
+}
+
+.my-skills .skills .skill:hover img{
+    width: 70%;
+}
 
 /* Contact Me */
 
